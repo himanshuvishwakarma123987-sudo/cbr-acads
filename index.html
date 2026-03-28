@@ -1,141 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CBR Acads</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f7ff;
-}
-
-/* Header */
-header {
-  background: linear-gradient(135deg, #4a6cf7, #9b8cff);
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 36px;
-}
-
-.btn {
-  background: white;
-  color: #4a6cf7;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-/* Sections */
-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  background: white;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 12px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-/* Contact */
-input, textarea {
-  width: 80%;
-  padding: 10px;
-  margin: 5px;
-}
-
-button {
-  padding: 10px 20px;
-  background: #4a6cf7;
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
-
-/* Footer */
-footer {
-  background: #222;
-  color: white;
-  padding: 20px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBR Acads - Your Path to Academic Success</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo-placeholder.png" alt="CBR Acads Logo" id="logo-img">
+                <span>CBR Acads</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<header>
-  <h1>Welcome to CBR Acads</h1>
-  <p>Your Path to Academic Success</p>
-  <a href="#" class="btn">Join Now</a>
-</header>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-slide-up">Welcome to CBR Acads</h1>
+            <p class="hero-subtitle animate-slide-up-delay">Your Path to Academic Success</p>
+            <button class="cta-button animate-slide-up-delay2" onclick="scrollToContact()">
+                <i class="fas fa-rocket"></i> Join Now
+            </button>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
 
-<section>
-  <h2>About Us</h2>
-  <p>We provide quality education for students from class 6 to 12 with personal attention and expert guidance.</p>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About CBR Acads</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At CBR Acads, we provide quality education and personal attention to students from Class 6 to 12. Our expert faculty and proven teaching methodology help students excel in their academics and build a strong foundation for future success.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>6-12</h3>
+                            <p>Classes</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>95%</h3>
+                            <p>Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-  <h2>Courses</h2>
-  <div class="cards">
-    <div class="card">Math (6-12)</div>
-    <div class="card">Science (6-12)</div>
-    <div class="card">English (6-12)</div>
-  </div>
-</section>
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Our Courses</h2>
+            <p class="section-subtitle">Comprehensive coaching for Classes 6th to 12th</p>
+            <div class="courses-grid">
+                <div class="course-card animate-fade-in">
+                    <div class="course-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Mathematics</h3>
+                    <p>Classes 6th - 12th</p>
+                </div>
+                <div class="course-card animate-fade-in" style="animation-delay: 0.2s">
+                    <div class="course-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Science</h3>
+                    <p>Classes 6th - 12th</p>
+                </div>
+                <div class="course-card animate-fade-in" style="animation-delay: 0.4s">
+                    <div class="course-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>Classes 6th - 12th</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-  <h2>Why Choose Us</h2>
-  <div class="cards">
-    <div class="card">Small Batch Size</div>
-    <div class="card">Experienced Teachers</div>
-    <div class="card">Weekly Tests</div>
-    <div class="card">Doubt Sessions</div>
-  </div>
-</section>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card animate-slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Small Batch Size</h3>
+                    <p>Personalized attention with small batches of maximum 15 students</p>
+                </div>
+                <div class="feature-card animate-slide-up" style="animation-delay: 0.2s">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Experienced Teachers</h3>
+                    <p>Highly qualified faculty with 10+ years of teaching experience</p>
+                </div>
+                <div class="feature-card animate-slide-up" style="animation-delay: 0.4s">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Weekly Tests</h3>
+                    <p>Regular assessments to track progress and improve performance</p>
+                </div>
+                <div class="feature-card animate-slide-up" style="animation-delay: 0.6s">
+                    <div class="feature-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Doubt Sessions</h3>
+                    <p>Daily doubt clearing sessions to ensure complete understanding</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-  <h2>Contact Us</h2>
-  <p>Phone: 9876543210</p>
-  <p>Address: Your City</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>Chat with us</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Education Street<br>Learning City, LC 110001</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <form>
-    <input type="text" placeholder="Your Name"><br>
-    <input type="email" placeholder="Your Email"><br>
-    <textarea placeholder="Your Message"></textarea><br>
-    <button>Send</button>
-  </form>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span>CBR Acads</span>
+                    </div>
+                    <p>Your Path to Academic Success</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CBR Acads. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  <br>
-  <a href="https://wa.me/919876543210" class="btn">Chat on WhatsApp</a>
-</section>
-
-<footer>
-  <p>© 2026 CBR Acads</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
