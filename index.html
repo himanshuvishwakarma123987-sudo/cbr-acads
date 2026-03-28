@@ -1,10 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CBR Acads</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBR Acads</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7ff;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #4a6cf7, #9b8cff);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+.btn {
+  background: white;
+  color: #4a6cf7;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+</style>
+
 </head>
+
 <body>
+
+<header>
   <h1>Welcome to CBR Acads</h1>
   <p>Your Path to Academic Success</p>
+  <a href="#" class="btn">Join Now</a>
+</header>
+
+<section>
+  <h2>About Us</h2>
+  <p>We provide quality education for students from class 6 to 12 with personal attention and expert guidance.</p>
+</section>
+
+<section>
+  <h2>Courses</h2>
+  <div class="cards">
+    <div class="card">Math (6-12)</div>
+    <div class="card">Science (6-12)</div>
+    <div class="card">English (6-12)</div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose Us</h2>
+  <div class="cards">
+    <div class="card">Small Batch Size</div>
+    <div class="card">Experienced Teachers</div>
+    <div class="card">Weekly Tests</div>
+    <div class="card">Doubt Sessions</div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Us</h2>
+  <p>Phone: 9876543210</p>
+  <p>Address: Your City</p>
+
+  <form>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button>Send</button>
+  </form>
+
+  <br>
+  <a href="https://wa.me/919876543210" class="btn">Chat on WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 CBR Acads</p>
+</footer>
+
 </body>
 </html>
